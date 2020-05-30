@@ -21,15 +21,17 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'SmartAgro',
       theme: ThemeData(
-        primaryColor: Colors.lightBlueAccent,
+        primaryColor: Colors.green,
       ),
       home: SafeArea(
         child: Scaffold(
           bottomNavigationBar: ConvexAppBar(
+            backgroundColor: Colors.green,
+              color: Colors.green[100],
               items: [
                 TabItem(icon: Icons.map, title: 'Discovery'),
                 TabItem(icon: Icons.add, title: 'Add'),
-                TabItem(icon: Icons.message, title: 'Message'),
+                TabItem(icon: Icons.assignment, title: 'Report'),
               ],
               initialActiveIndex: 1,//optional, default as 0
               onTap: (int i) {
